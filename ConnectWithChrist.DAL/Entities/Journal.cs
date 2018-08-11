@@ -10,28 +10,21 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
-    public class Friends : BaseEntity
+    public class Journal : NamedEntity
     {
         [Key]
-        public int FriendsID { get; set; }
+        public int JournalID { get; set; }
 
         [ForeignKey("User")]
-        public int Friend1ID { get; set; }
+        public int UserID { get; set; }
 
         [NotMapped]
         [JsonProperty]
-        public User Friend1 { get; set; }
-
-        [ForeignKey("User")]
-        public int Friend2ID { get; set; }
-
-        [NotMapped]
-        [JsonProperty]
-        public User Friend2 { get; set; }
+        public User User { get; set; }
 
         public override int GetPrimaryKey()
         {
-            return this.FriendsID;
+            throw new NotImplementedException();
         }
     }
 }
