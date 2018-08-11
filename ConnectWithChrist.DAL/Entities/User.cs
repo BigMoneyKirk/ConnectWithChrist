@@ -1,4 +1,5 @@
-﻿using ConnectWithChrist.DAL.Infrastructure;
+﻿using ConnectWithChrist.DAL.Enums;
+using ConnectWithChrist.DAL.Infrastructure;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -26,7 +27,7 @@ namespace ConnectWithChrist.DAL.Entities
 
         public string LastName { get; set; }
 
-        public int UserTypeEnum { get; set; }
+        public UserType UserTypeEnum { get; set; }
 
         public string PrimaryEmail { get; set; }
 

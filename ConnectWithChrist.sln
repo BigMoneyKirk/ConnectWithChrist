@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectWithChrist", "ConnectWithChrist\ConnectWithChrist.csproj", "{C89FC96E-C765-4F3F-9B2B-E6F0D4DBF732}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectWithChrist.Web", "ConnectWithChrist\ConnectWithChrist.Web.csproj", "{C89FC96E-C765-4F3F-9B2B-E6F0D4DBF732}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectWithChrist.Tests", "ConnectWithChrist.Tests\ConnectWithChrist.Tests.csproj", "{94162FFE-127F-4D37-B776-1E2B20229B42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectWithChrist.DAL", "ConnectWithChrist.DAL\ConnectWithChrist.DAL.csproj", "{717FA775-C9DF-449B-8EB6-1C3285288F88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{94162FFE-127F-4D37-B776-1E2B20229B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94162FFE-127F-4D37-B776-1E2B20229B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94162FFE-127F-4D37-B776-1E2B20229B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717FA775-C9DF-449B-8EB6-1C3285288F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717FA775-C9DF-449B-8EB6-1C3285288F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717FA775-C9DF-449B-8EB6-1C3285288F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717FA775-C9DF-449B-8EB6-1C3285288F88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
