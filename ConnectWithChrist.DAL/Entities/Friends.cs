@@ -20,14 +20,14 @@ namespace ConnectWithChrist.DAL.Entities
 
         [NotMapped]
         [JsonProperty]
-        public User Friend1 { get; set; }
+        public virtual User Friend1 { get; set; }
 
         [ForeignKey("User")]
         public int Friend2ID { get; set; }
 
         [NotMapped]
         [JsonProperty]
-        public User Friend2 { get; set; }
+        public virtual User Friend2 { get; set; }
 
         public override int GetPrimaryKey()
         {

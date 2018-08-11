@@ -10,23 +10,21 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
-    public class FavoriteVerse : NamedEntity
+    public class BlogEntry : NamedEntity
     {
         [Key]
-        public int FavoriteVerseID { get; set; }
+        public int BlogEntryID { get; set; }
 
-        [ForeignKey("User")]
-        public int UserID { get; set; }
-
-        public string Comments { get; set; }
+        [ForeignKey("Blog")]
+        public int BlogID { get; set; }
 
         [NotMapped]
         [JsonProperty]
-        public virtual User User { get; set; }
+        public virtual Blog Blog { get; set; }
 
         public override int GetPrimaryKey()
         {
-            return this.FavoriteVerseID;
+            return this.BlogEntryID;
         }
     }
 }

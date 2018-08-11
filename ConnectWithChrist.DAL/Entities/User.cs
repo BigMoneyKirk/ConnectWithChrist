@@ -12,6 +12,11 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class User : NamedEntity
     {
+        public User() : base()
+        {
+            this.Name = $"{this.FirstName} {this.LastName}";
+        }
+
         [Key]
         public int UserID { get; set; }
 
@@ -42,5 +47,6 @@ namespace ConnectWithChrist.DAL.Entities
         {
             return this.UserID;
         }
+
     }
 }

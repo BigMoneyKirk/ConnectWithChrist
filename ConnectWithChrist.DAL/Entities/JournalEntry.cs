@@ -20,7 +20,7 @@ namespace ConnectWithChrist.DAL.Entities
 
         [NotMapped]
         [JsonProperty]
-        public Journal Journal { get; set; }
+        public virtual Journal Journal { get; set; }
 
         public override int GetPrimaryKey()
         {
