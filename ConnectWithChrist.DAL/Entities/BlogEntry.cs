@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
-    public class BlogEntry : NamedEntity
+    public class BlogEntry : LinkInfo
     {
         [Key]
         public int BlogEntryID { get; set; }

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
-    public class Picture : NamedEntity
+    public class Picture : LinkInfo
     {
         [Key]
         public int PictureID { get; set; }

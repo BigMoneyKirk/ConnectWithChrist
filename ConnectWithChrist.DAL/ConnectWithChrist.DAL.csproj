@@ -48,16 +48,20 @@
     <Compile Include="Entities\BlogEntry.cs" />
     <Compile Include="Entities\FavoriteVerse.cs" />
     <Compile Include="Entities\Friends.cs" />
+    <Compile Include="Entities\GodlyLink.cs" />
+    <Compile Include="Entities\HealthTip.cs" />
     <Compile Include="Entities\Job.cs" />
     <Compile Include="Entities\Journal.cs" />
     <Compile Include="Entities\JournalEntry.cs" />
     <Compile Include="Entities\NewsFeed.cs" />
     <Compile Include="Entities\Picture.cs" />
+    <Compile Include="Entities\Sermon.cs" />
     <Compile Include="Entities\State.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\VerseOfDay.cs" />
     <Compile Include="Enums\UserType.cs" />
     <Compile Include="Infrastructure\BaseEntity.cs" />
+    <Compile Include="Infrastructure\LinkInfo.cs" />
     <Compile Include="Infrastructure\NamedEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

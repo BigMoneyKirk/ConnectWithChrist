@@ -21,20 +21,26 @@ namespace ConnectWithChrist.DAL.Entities
         [Key]
         public int UserID { get; set; }
 
+        [Required]
         public string FirstName { get; set; }
 
         public string MiddleName { get; set; }
 
+        [Required]
         public string LastName { get; set; }
 
+        [Required]
         public UserType UserTypeEnum { get; set; }
 
+        [Required]
         public string PrimaryEmail { get; set; }
 
         public string MobileNumber { get; set; }
 
+        [Required]
         public string Username { get; set; }
 
+        [Required]
         public string Password { get; set; }
 
         public DateTime? DateOfBirth { get; set; }
