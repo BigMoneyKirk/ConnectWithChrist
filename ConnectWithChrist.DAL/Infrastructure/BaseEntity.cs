@@ -10,11 +10,11 @@ namespace ConnectWithChrist.DAL.Infrastructure
     {
         protected BaseEntity()
         {
-            this.isActive = true;
+            this.IsActive = true;
             this.CreatedAt = DateTime.Now;
         }
 
-        public bool isActive { get; set; }
+        public bool IsActive { get; set; }
 
         public int CreatedBy { get; set; }
 
@@ -27,5 +27,7 @@ namespace ConnectWithChrist.DAL.Infrastructure
         public DateTime? UpdatedAt { get; set; }
 
         public DateTime? DeletedAt { get; set; }
+
+        public abstract int GetPrimaryKey();
     }
 }
