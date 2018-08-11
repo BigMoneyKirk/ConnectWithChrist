@@ -50,7 +50,14 @@ namespace ConnectWithChrist.DAL.Entities
 
         [NotMapped]
         [JsonProperty]
-        public State State { get; set; }
+        public virtual State State { get; set; }
+
+        [ForeignKey("Job")]
+        public int? FavortieJobID { get; set; }
+
+        [NotMapped]
+        [JsonProperty]
+        public virtual Job FavoriteJob { get; set; }
 
         public override int GetPrimaryKey()
         {
