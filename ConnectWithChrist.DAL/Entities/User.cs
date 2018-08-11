@@ -26,6 +26,8 @@ namespace ConnectWithChrist.DAL.Entities
 
         public string LastName { get; set; }
 
+        public int UserTypeEnum { get; set; }
+
         public string PrimaryEmail { get; set; }
 
         public string MobileNumber { get; set; }
