@@ -20,7 +20,7 @@ namespace ConnectWithChrist.DAL.Entities
 
         [NotMapped]
         [JsonProperty]
-        public User User { get; set; }
+        public virtual User User { get; set; }
 
         public string Textfield { get; set; }
 
