@@ -12,10 +12,12 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class JournalEntry : NamedEntity
     {
-        [Key]
+        [Key, Column(Order = 1)]
+        [JsonProperty]
         public int JournalEntryID { get; set; }
 
         [ForeignKey("Journal")]
+        [JsonProperty]
         public int JournalID { get; set; }
 
         [NotMapped]

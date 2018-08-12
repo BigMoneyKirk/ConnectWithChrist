@@ -12,7 +12,7 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class FavoriteVerse : NamedEntity
     {
-        [Key]
+        [Key, Column(Order = 1)]
         [JsonProperty]
         public int FavoriteVerseID { get; set; }
 
@@ -20,11 +20,12 @@ namespace ConnectWithChrist.DAL.Entities
         [JsonProperty]
         public int UserID { get; set; }
 
-        public string Comments { get; set; }
-
         [NotMapped]
         [JsonProperty]
         public virtual User User { get; set; }
+
+        [JsonProperty]
+        public string Comments { get; set; }
 
         public override int GetPrimaryKey()
         {

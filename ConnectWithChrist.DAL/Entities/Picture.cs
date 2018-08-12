@@ -12,16 +12,19 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class Picture : LinkInfo
     {
-        [Key]
+        [Key, Column(Order = 1)]
+        [JsonProperty]
         public int PictureID { get; set; }
 
         [ForeignKey("User")]
+        [JsonProperty]
         public int UserID { get; set; }
 
         [NotMapped]
         [JsonProperty]
         public virtual User User { get; set; }
 
+        [JsonProperty]
         public string File { get; set; }
 
         public override int GetPrimaryKey()

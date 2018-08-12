@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class GodlyLink : LinkInfo
     {
-        [Key]
+        [Key, Column(Order = 1)]
         [JsonProperty]
         public int GodlyLinkID { get; set; }
 

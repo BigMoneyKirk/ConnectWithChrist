@@ -28,6 +28,7 @@ namespace ConnectWithChrist.DAL.Entities
         public string FirstName { get; set; }
 
         [MaxLength(20)]
+        [JsonProperty]
         public string MiddleName { get; set; }
 
         [Required]
@@ -66,7 +67,7 @@ namespace ConnectWithChrist.DAL.Entities
         [JsonProperty]
         public virtual State State { get; set; }
 
-        [ForeignKey("Job")]
+        [ForeignKey("FavoriteJob")]
         [JsonProperty]
         public int? FavortieJobID { get; set; }
 

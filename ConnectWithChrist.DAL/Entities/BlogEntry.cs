@@ -12,7 +12,7 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class BlogEntry : LinkInfo
     {
-        [Key]
+        [Key, Column(Order = 1)]
         [JsonProperty]
         public int BlogEntryID { get; set; }
 

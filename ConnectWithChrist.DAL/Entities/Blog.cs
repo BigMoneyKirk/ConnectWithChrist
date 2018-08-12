@@ -12,7 +12,7 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class Blog : NamedEntity
     {
-        [Key]
+        [Key, Column(Order = 1)]
         [JsonProperty]
         public int BlogID { get; set; }
 

@@ -72,6 +72,7 @@
     <Compile Include="Infrastructure\BaseEntity.cs" />
     <Compile Include="Infrastructure\LinkInfo.cs" />
     <Compile Include="Infrastructure\NamedEntity.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

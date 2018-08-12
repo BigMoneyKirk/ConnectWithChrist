@@ -12,7 +12,7 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class Friends : BaseEntity
     {
-        [Key]
+        [Key, Column(Order = 1)]
         [JsonProperty]
         public int FriendsID { get; set; }
 

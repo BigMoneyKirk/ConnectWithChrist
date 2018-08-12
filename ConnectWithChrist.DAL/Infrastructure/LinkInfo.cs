@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace ConnectWithChrist.DAL.Infrastructure
 {
     public abstract class LinkInfo : NamedEntity
     {
+        [JsonProperty]
         public string Link { get; set; }
     }
 }
