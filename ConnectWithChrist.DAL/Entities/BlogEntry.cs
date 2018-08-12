@@ -13,9 +13,11 @@ namespace ConnectWithChrist.DAL.Entities
     public class BlogEntry : LinkInfo
     {
         [Key]
+        [JsonProperty]
         public int BlogEntryID { get; set; }
 
         [ForeignKey("Blog")]
+        [JsonProperty]
         public int BlogID { get; set; }
 
         [NotMapped]

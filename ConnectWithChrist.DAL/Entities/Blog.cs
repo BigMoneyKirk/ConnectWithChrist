@@ -13,9 +13,11 @@ namespace ConnectWithChrist.DAL.Entities
     public class Blog : NamedEntity
     {
         [Key]
+        [JsonProperty]
         public int BlogID { get; set; }
 
         [ForeignKey("User")]
+        [JsonProperty]
         public int UserID { get; set; }
 
         [NotMapped]

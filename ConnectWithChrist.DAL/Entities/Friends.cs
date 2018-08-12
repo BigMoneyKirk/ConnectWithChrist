@@ -13,16 +13,19 @@ namespace ConnectWithChrist.DAL.Entities
     public class Friends : BaseEntity
     {
         [Key]
+        [JsonProperty]
         public int FriendsID { get; set; }
 
-        [ForeignKey("User")]
+        [ForeignKey("Friend1")]
+        [JsonProperty]
         public int Friend1ID { get; set; }
 
         [NotMapped]
         [JsonProperty]
         public virtual User Friend1 { get; set; }
 
-        [ForeignKey("User")]
+        [ForeignKey("Friend2")]
+        [JsonProperty]
         public int Friend2ID { get; set; }
 
         [NotMapped]

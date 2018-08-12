@@ -1,4 +1,5 @@
 ﻿using ConnectWithChrist.DAL.Infrastructure;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -11,6 +12,7 @@ namespace ConnectWithChrist.DAL.Entities
     public class GodlyLink : LinkInfo
     {
         [Key]
+        [JsonProperty]
         public int GodlyLinkID { get; set; }
 
         public override int GetPrimaryKey()

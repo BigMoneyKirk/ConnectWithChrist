@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectWithChristContext.cs" />
     <Compile Include="Entities\Blog.cs" />
     <Compile Include="Entities\BlogEntry.cs" />
     <Compile Include="Entities\FavoriteVerse.cs" />

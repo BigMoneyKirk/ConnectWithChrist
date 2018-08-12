@@ -18,34 +18,48 @@ namespace ConnectWithChrist.DAL.Entities
             this.Name = $"{this.FirstName} {this.LastName}";
         }
 
-        [Key]
+        [Key, Column(Order = 1)]
+        [JsonProperty]
         public int UserID { get; set; }
 
         [Required]
+        [MaxLength(20)]
+        [JsonProperty]
         public string FirstName { get; set; }
 
+        [MaxLength(20)]
         public string MiddleName { get; set; }
 
         [Required]
+        [MaxLength(40)]
+        [JsonProperty]
         public string LastName { get; set; }
 
         [Required]
-        public UserType UserTypeEnum { get; set; }
+        [JsonProperty]
+        public virtual UserType UserTypeEnum { get; set; }
 
         [Required]
+        [JsonProperty]
         public string PrimaryEmail { get; set; }
 
+        [JsonProperty]
         public string MobileNumber { get; set; }
 
         [Required]
+        [MaxLength(20)]
+        [JsonProperty]
         public string Username { get; set; }
 
         [Required]
+        [JsonProperty]
         public string Password { get; set; }
 
+        [JsonProperty]
         public DateTime? DateOfBirth { get; set; }
 
         [ForeignKey("State")]
+        [JsonProperty]
         public int StateID { get; set; }
 
         [NotMapped]
@@ -53,6 +67,7 @@ namespace ConnectWithChrist.DAL.Entities
         public virtual State State { get; set; }
 
         [ForeignKey("Job")]
+        [JsonProperty]
         public int? FavortieJobID { get; set; }
 
         [NotMapped]

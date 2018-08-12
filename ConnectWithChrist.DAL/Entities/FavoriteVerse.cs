@@ -13,9 +13,11 @@ namespace ConnectWithChrist.DAL.Entities
     public class FavoriteVerse : NamedEntity
     {
         [Key]
+        [JsonProperty]
         public int FavoriteVerseID { get; set; }
 
         [ForeignKey("User")]
+        [JsonProperty]
         public int UserID { get; set; }
 
         public string Comments { get; set; }
