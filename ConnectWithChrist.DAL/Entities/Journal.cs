@@ -12,6 +12,10 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class Journal : NamedEntity
     {
+        public Journal() : base()
+        {
+        }
+
         [Key, Column(Order = 1)]
         [JsonProperty]
         public int JournalID { get; set; }

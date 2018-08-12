@@ -12,6 +12,10 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class Picture : LinkInfo
     {
+        public Picture() : base()
+        {
+        }
+
         [Key, Column(Order = 1)]
         [JsonProperty]
         public int PictureID { get; set; }

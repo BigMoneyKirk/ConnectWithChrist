@@ -9,6 +9,10 @@ namespace ConnectWithChrist.DAL.Infrastructure
 {
     public abstract class NamedEntity : BaseEntity
     {
+        public NamedEntity()
+        {
+        }
+
         [JsonProperty]
         public string Name { get; set; }
 

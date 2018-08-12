@@ -12,16 +12,20 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class BlogEntry : LinkInfo
     {
+        public BlogEntry() : base()
+        {
+        }
+
         [Key, Column(Order = 1)]
         [JsonProperty]
         public int BlogEntryID { get; set; }
 
-        [ForeignKey("Blog")]
         [JsonProperty]
+        [ForeignKey("Blog")]
         public int BlogID { get; set; }
 
-        [NotMapped]
         [JsonProperty]
+        [NotMapped]
         public virtual Blog Blog { get; set; }
 
         public override int GetPrimaryKey()

@@ -12,6 +12,10 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class Sermon : LinkInfo
     {
+        public Sermon() : base()
+        {
+        }
+
         [Key, Column(Order = 1)]
         [JsonProperty]
         public int SermonID { get; set; }

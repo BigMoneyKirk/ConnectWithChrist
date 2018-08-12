@@ -11,6 +11,10 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class VerseOfDay : NamedEntity
     {
+        public VerseOfDay() : base()
+        {
+        }
+
         [Key, Column(Order = 1)]
         public int VerseOfDayID { get; set; }
 

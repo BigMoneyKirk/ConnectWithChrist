@@ -1,4 +1,5 @@
-﻿using ConnectWithChrist.DAL.Infrastructure;
+﻿
+using ConnectWithChrist.DAL.Infrastructure;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,10 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class Blog : NamedEntity
     {
+        public Blog() : base()
+        {
+        }
+
         [Key, Column(Order = 1)]
         [JsonProperty]
         public int BlogID { get; set; }

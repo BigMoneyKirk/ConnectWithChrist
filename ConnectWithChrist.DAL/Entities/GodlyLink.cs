@@ -12,6 +12,10 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class GodlyLink : LinkInfo
     {
+        public GodlyLink() : base()
+        {
+        }
+
         [Key, Column(Order = 1)]
         [JsonProperty]
         public int GodlyLinkID { get; set; }

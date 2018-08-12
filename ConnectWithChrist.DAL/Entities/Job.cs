@@ -12,6 +12,10 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class Job : NamedEntity
     {
+        public Job() : base()
+        {
+        }
+
         [Key, Column(Order = 1)]
         [JsonProperty]
         public int JobID { get; set; }

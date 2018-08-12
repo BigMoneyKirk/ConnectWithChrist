@@ -12,6 +12,10 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class NewsFeed : BaseEntity
     {
+        public NewsFeed() : base()
+        {
+        }
+
         [Key, Column(Order = 1)]
         [JsonProperty]
         public int NewsFeedID { get; set; }

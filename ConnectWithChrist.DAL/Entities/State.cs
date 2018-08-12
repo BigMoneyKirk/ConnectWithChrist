@@ -12,6 +12,10 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class State : NamedEntity
     {
+        public State() : base()
+        {
+        }
+
         [Key, Column(Order = 1)]
         [JsonProperty]
         public int StateID { get; set; }

@@ -1,4 +1,5 @@
 ﻿using ConnectWithChrist.DAL.Infrastructure;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -11,6 +12,10 @@ namespace ConnectWithChrist.DAL.Entities
 {
     public class HealthTip : LinkInfo
     {
+        public HealthTip() : base()
+        {
+        }
+
         [Key, Column(Order = 1)]
         [JsonProperty]
         public int HealthTipID { get; set; }

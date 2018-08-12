@@ -9,6 +9,10 @@ namespace ConnectWithChrist.DAL.Infrastructure
 {
     public abstract class LinkInfo : NamedEntity
     {
+        protected LinkInfo() : base()
+        {
+        }
+
         [JsonProperty]
         public string Link { get; set; }
     }
