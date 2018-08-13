@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Infrastructure
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public abstract class NamedEntity : BaseEntity
     {
         public NamedEntity()

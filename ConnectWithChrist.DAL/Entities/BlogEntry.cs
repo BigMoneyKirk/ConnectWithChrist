@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public class BlogEntry : LinkInfo
     {
         public BlogEntry() : base()
@@ -20,12 +21,12 @@ namespace ConnectWithChrist.DAL.Entities
         [JsonProperty]
         public int BlogEntryID { get; set; }
 
-        [JsonProperty]
         [ForeignKey("Blog")]
+        [JsonProperty]
         public int BlogID { get; set; }
 
+        //[NotMapped]
         [JsonProperty]
-        [NotMapped]
         public virtual Blog Blog { get; set; }
 
         public override int GetPrimaryKey()

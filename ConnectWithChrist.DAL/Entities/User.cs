@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public class User : NamedEntity
     {
         public User() : base()
@@ -63,7 +64,7 @@ namespace ConnectWithChrist.DAL.Entities
         [JsonProperty]
         public int StateID { get; set; }
 
-        [NotMapped]
+        //[NotMapped]
         [JsonProperty]
         public virtual State State { get; set; }
 
@@ -71,7 +72,7 @@ namespace ConnectWithChrist.DAL.Entities
         [JsonProperty]
         public int? FavortieJobID { get; set; }
 
-        [NotMapped]
+        //[NotMapped]
         [JsonProperty]
         public virtual Job FavoriteJob { get; set; }
 

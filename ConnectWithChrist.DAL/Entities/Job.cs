@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public class Job : NamedEntity
     {
         public Job() : base()

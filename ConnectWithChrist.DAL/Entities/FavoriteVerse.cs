@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public class FavoriteVerse : NamedEntity
     {
         public FavoriteVerse() : base()
@@ -24,7 +25,7 @@ namespace ConnectWithChrist.DAL.Entities
         [JsonProperty]
         public int UserID { get; set; }
 
-        [NotMapped]
+        //[NotMapped]
         [JsonProperty]
         public virtual User User { get; set; }
 

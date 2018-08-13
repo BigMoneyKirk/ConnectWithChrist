@@ -1,4 +1,5 @@
 ﻿using ConnectWithChrist.DAL.Infrastructure;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public class VerseOfDay : NamedEntity
     {
         public VerseOfDay() : base()

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Infrastructure
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public abstract class BaseEntity
     {
         protected BaseEntity()
@@ -37,21 +38,24 @@ namespace ConnectWithChrist.DAL.Infrastructure
         [JsonProperty]
         public int CreatedByID { get; set; }
 
-        [NotMapped]
+        //[NotMapped]
+        [JsonProperty]
         public virtual User CreatedBy { get; set; }
 
         [ForeignKey("UpdatedBy")]
         [JsonProperty]
         public int UpdatedByID { get; set; }
 
-        [NotMapped]
+        //[NotMapped]
+        [JsonProperty]
         public virtual User UpdatedBy { get; set; }
 
         [ForeignKey("DeletedBy")]
         [JsonProperty]
         public int DeletedByID { get; set; }
 
-        [NotMapped]
+        //[NotMapped]
+        [JsonProperty]
         public virtual User DeletedBy { get; set; }
 
         public abstract int GetPrimaryKey();

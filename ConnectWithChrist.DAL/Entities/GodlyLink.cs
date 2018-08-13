@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public class GodlyLink : LinkInfo
     {
         public GodlyLink() : base()

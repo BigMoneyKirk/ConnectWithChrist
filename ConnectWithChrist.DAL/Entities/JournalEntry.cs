@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public class JournalEntry : NamedEntity
     {
         public JournalEntry() : base()
@@ -24,7 +25,7 @@ namespace ConnectWithChrist.DAL.Entities
         [JsonProperty]
         public int JournalID { get; set; }
 
-        [NotMapped]
+        //[NotMapped]
         [JsonProperty]
         public virtual Journal Journal { get; set; }
 

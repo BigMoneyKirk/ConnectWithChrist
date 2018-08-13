@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConnectWithChrist.DAL.Entities
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public class Friends : BaseEntity
     {
         public Friends() : base()
@@ -24,7 +25,7 @@ namespace ConnectWithChrist.DAL.Entities
         [JsonProperty]
         public int Friend1ID { get; set; }
 
-        [NotMapped]
+        //[NotMapped]
         [JsonProperty]
         public virtual User Friend1 { get; set; }
 
@@ -32,7 +33,7 @@ namespace ConnectWithChrist.DAL.Entities
         [JsonProperty]
         public int Friend2ID { get; set; }
 
-        [NotMapped]
+        //[NotMapped]
         [JsonProperty]
         public virtual User Friend2 { get; set; }
 
